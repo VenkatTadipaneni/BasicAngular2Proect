@@ -1,0 +1,9 @@
+
+<p>{{cardLogo}}</p>
+<!-- Small Variant -->
+
+  <form [formGroup]="detailsForm">
+    <input type="text" formControlName="number" [class.invalid]="!detailsForm.controls.number.valid"
+           (input)="onInput()">
+    <input type="text" formControlName="cvv" [class.invalid]="!detailsForm.controls.cvv.valid">
+  </form>
